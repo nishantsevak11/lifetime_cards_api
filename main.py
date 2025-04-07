@@ -40,22 +40,19 @@ async def add_card(
     petrol_benefits: Optional[str] = Form(None),
     network_pump: Optional[str] = Form(None),
     features: Optional[str] = Form(None),
-    front_image: Optional[UploadFile] = File(None),
-    back_image: Optional[UploadFile] = File(None),
+    front_image_url: Optional[str] = Form(None),  # Changed to URL
+    back_image_url: Optional[str] = Form(None),   # Changed to URL
     db: Session = Depends(cad_get_db),
 ):
-    front_img_data = encode_image(front_image)
-    back_img_data = encode_image(back_image)
-
     try:
         query = text("""
             INSERT INTO bank_cards 
             (bank_name, bank_code, card_type, card_name, card_network, 
             annual_fee, foreign_transaction_fee, rewards_program, 
-            petrol_benefits, network_pump, features, front_image, back_image)
+            petrol_benefits, network_pump, features, front_image_url, back_image_url)
             VALUES (:bank_name, :bank_code, :card_type, :card_name, :card_network, 
                     :annual_fee, :foreign_transaction_fee, :rewards_program, 
-                    :petrol_benefits, :network_pump, :features, :front_image, :back_image)
+                    :petrol_benefits, :network_pump, :features, :front_image_url, :back_image_url)
             RETURNING card_id;
         """)
         result = db.execute(query, {
@@ -70,8 +67,8 @@ async def add_card(
             "petrol_benefits": petrol_benefits,
             "network_pump": network_pump,
             "features": features,
-            "front_image": front_img_data,
-            "back_image": back_img_data,
+            "front_image_url": front_image_url,
+            "back_image_url": back_image_url,
         })
         db.commit()
         card_id = result.scalar()
