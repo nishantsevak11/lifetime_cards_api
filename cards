@@ -11,7 +11,7 @@ INSERT INTO bank_cards (bank_name, bank_code, card_type, card_name, card_network
     ("State Bank of India", "SBI005", "credit", "SBI IRCTC Premier", "visa", 1499.00, 3.50, "10% cashback on IRCTC", NULL, NULL, "Railway lounge access, travel rewards", "https://www.sbicard.com/sbi-card-en/assets/media/images/personal/credit-cards/network-card-images/irctc-premiere.png"),
     ("ICICI Bank", "ICICI001", "credit", "ICICI Emeralde Metal", "visa", 12500.00, 1.99, "Unlimited reward points on travel", NULL, NULL, "Lounge access, Taj Epicure membership", "https://www.icicibank.com/content/dam/icicibank/india/managed-assets/credit-card/emeralde-private-metal-credit-card.jpg"),
    
-    ("ICICI Bank", "ICICI003", "credit", "ICICI HPCL Super Saver", "visa", 500.00, 3.50, "5% cashback on HPCL fuel", "5% cashback at HPCL", "HPCL", "Reward points on groceries", https://www.icicibank.com/content/dam/icicibank/icici-assets/personal-banking/cards/coral-credit.png"),
+    ("ICICI Bank", "ICICI003", "credit", "ICICI HPCL Super Saver", "visa", 500.00, 3.50, "5% cashback on HPCL fuel", "5% cashback at HPCL", "HPCL", "Reward points on groceries", "https://www.icicibank.com/content/dam/icicibank/icici-assets/personal-banking/cards/coral-credit.png"),
     ("ICICI Bank", "ICICI004", "debit", "ICICI Coral Debit", "visa", 0.00, 3.00, NULL, NULL, NULL, "ATM access, contactless payments", "https://www.icicibank.com/content/dam/icicibank/icici-assets/personal-banking/coral-credit-card-large.png"),
     ("ICICI Bank", "ICICI005", "credit", "ICICI Rubyx", "visa", 2000.00, 3.50, "2x points on international spends", "1% fuel surcharge waiver up to ₹300/month", "IOCL", "Lounge access, movie discounts", "https://www.icicibank.com/content/dam/icicibank/india/managed-assets/credit-card/rubyx-card.png"),
     ("Axis Bank", "AXIS001", "credit", "Axis Magnus", "visa", 12500.00, 1.99, "12x points on luxury spends", NULL, NULL, "Lounge access, concierge", "https://www.axisbank.com/images/default-source/revamp_new/cards/cc-new/card8.png"),
@@ -51,9 +51,9 @@ INSERT INTO bank_cards (bank_name, bank_code, card_type, card_name, card_network
     ("Federal Bank", "FED005", "prepaid", "Federal Gift Card", "visa", 0.00, 2.50, NULL, NULL, NULL, "Reloadable, gift-friendly", "https://www.federalbank.co.in/documents/10180/0/Visa+Signet+%281%29.jpg/4d077628-f088-e539-4391-404ad95c5103?t=1644860272077"),
     
     ("Punjab National Bank", "PNB002", "credit", "PNB Global Gold", "visa", 1000.00, 3.50, "3x points on international spends", NULL, NULL, "Reward points, travel insurance", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9QkeK89oItXdGRTHLjQrbjDZoxViVOsAK2Q&s"),
-    ("Punjab National Bank", "PNB003", "debit", "PNB Platinum Debit", "visa", 0.00, 3.00, NULL, NULL, NULL, "Global acceptance, online banking", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9QkeK89oItXdGRTHLjQrbjDZoxViVOsAK2Q&s),
+    ("Punjab National Bank", "PNB003", "debit", "PNB Platinum Debit", "visa", 0.00, 3.00, NULL, NULL, NULL, "Global acceptance, online banking", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9QkeK89oItXdGRTHLjQrbjDZoxViVOsAK2Q&s"),
     ("Punjab National Bank", "PNB004", "credit", "PNB IOCL Fuel", "visa", 500.00, 3.50, "4% value back on IOCL fuel", "4% value back at IOCL", "IOCL", "Reward points, EMI options", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9QkeK89oItXdGRTHLjQrbjDZoxViVOsAK2Q&s"),
-    ("Punjab National Bank", "PNB005", "prepaid", "PNB Prepaid Card", "visa", 0.00, 2.50, NULL, NULL, NULL, "Reloadable, no credit check", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9QkeK89oItXdGRTHLjQrbjDZoxViVOsAK2Q&s");
+    ("Punjab National Bank", "PNB005", "prepaid", "PNB Prepaid Card", "visa", 0.00, 2.50, NULL, NULL, NULL, "Reloadable, no credit check", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9QkeK89oItXdGRTHLjQrbjDZoxViVOsAK2Q&s")
 
 
 
